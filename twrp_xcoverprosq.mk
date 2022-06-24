@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := xcoverpro
+PRODUCT_RELEASE_NAME := xcoverprosq
 
 # Inherit from common AOSP config
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
@@ -24,17 +24,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/xcoverpro/device.mk)
+$(call inherit-product, device/samsung/xcoverprosq/device.mk)
 
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/xcoverpro/recovery/root,recovery/root)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/xcoverprosq/recovery/root,recovery/root)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := twrp_xcoverpro
-PRODUCT_DEVICE := xcoverpro
+PRODUCT_NAME := twrp_xcoverprosq
+PRODUCT_DEVICE := xcoverprosq
 PRODUCT_MODEL := SM-G715U
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung

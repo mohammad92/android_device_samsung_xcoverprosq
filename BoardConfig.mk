@@ -54,9 +54,9 @@ TARGET_BOARD_PLATFORM := universal9611
 TARGET_BOARD_PLATFORM_GPU := mali-g72
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/samsung/xcoverpro/prebuilt/Image
-TARGET_PREBUILT_DTB := device/samsung/xcoverpro/prebuilt/dtb
-BOARD_PREBUILT_DTBOIMAGE := device/samsung/xcoverpro/prebuilt/recoverydtbo
+TARGET_PREBUILT_KERNEL := device/samsung/xcoverprosq/prebuilt/Image
+TARGET_PREBUILT_DTB := device/samsung/xcoverprosq/prebuilt/dtb
+BOARD_PREBUILT_DTBOIMAGE := device/samsung/xcoverprosq/prebuilt/recoverydtbo
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_KERNEL_ARCH := arm64
@@ -76,7 +76,7 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset 
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET) --second_offset $(BOARD_KERNEL_SECOND_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION) --pagesize $(BOARD_KERNEL_PAGESIZE) --board "SRPSJ10A007RU"
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB) --dtb_offset $(BOARD_DTB_OFFSET)
-BOARD_CUSTOM_BOOTIMG_MK := device/samsung/xcoverpro/bootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/samsung/xcoverprosq/bootimg.mk
 
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -123,7 +123,7 @@ TW_INCLUDE_FBE_METADATA_DECRYPT := false
 BOARD_USES_METADATA_PARTITION := true
 
 # TWRP specific build flags
-TW_DEVICE_VERSION := 3_afaneh92
+TW_DEVICE_VERSION := 1_afaneh92
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"

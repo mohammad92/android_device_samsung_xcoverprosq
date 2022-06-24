@@ -1,4 +1,4 @@
-MKBOOTIMG := device/samsung/xcoverpro/mkbootimg
+MKBOOTIMG := device/samsung/xcoverprosq/mkbootimg
 
 FLASH_IMAGE_TARGET ?= $(PRODUCT_OUT)/recovery.tar
 

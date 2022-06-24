@@ -15,6 +15,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/twrp_xcoverpro.mk
+	$(LOCAL_DIR)/twrp_xcoverprosq.mk
 
-COMMON_LUNCH_CHOICES := twrp_xcoverpro-eng
+COMMON_LUNCH_CHOICES := twrp_xcoverprosq-eng
